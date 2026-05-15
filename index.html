@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PQJHWBMD');</script>
+  <!-- End Google Tag Manager -->
+  <title>Hospital Veterinário São Lázaro 24h – Fortaleza</title>
+  <meta name="description" content="Hospital Veterinário São Lázaro com atendimento 24h em Fortaleza. Emergências, cirurgias e diagnóstico por imagem. Prontos para te atender agora." />
+  <link rel="icon" type="image/webp" href="assets/logo.webp" />
+  <link rel="preload" as="image" href="assets/clinica1.webp" fetchpriority="high" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --vermelho: #DC2626;
+      --vermelho-hover: #B91C1C;
+      --vermelho-suave: #FEE2E2;
+      --amarelo: #F59E0B;
+      --amarelo-hover: #D97706;
+      --amarelo-claro: #FFFBEB;
+      --verde: #22C55E;
+      --verde-hover: #16A34A;
+      --texto: #111827;
+      --cinza: #6B7280;
+      --cinza-claro: #F9FAFB;
+      --borda: #E5E7EB;
+      --branco: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      color: var(--texto);
+      background: var(--branco);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ── TOPO ── */
+    .topo {
+      background: var(--vermelho);
+      color: rgba(255,255,255,.95);
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .topo-dot {
+      display: inline-block;
+      width: 7px; height: 7px;
+      background: #4ade80;
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: middle;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+
+    /* ── NAV ── */
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 48px;
+      border-bottom: 1px solid var(--borda);
+      background: var(--branco);
+      position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 1px 8px rgba(0,0,0,.06);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo-circulo {
+      width: 40px; height: 40px;
+      border-radius: 50%; overflow: hidden; flex-shrink: 0;
+      background: var(--vermelho-suave);
+    }
+    .nav-logo-circulo img { width: 100%; height: 100%; object-fit: cover; }
+    .nav-nome { font-size: 17px; font-weight: 900; color: var(--vermelho); letter-spacing: -.4px; }
+    .nav-badge {
+      font-size: 11px; font-weight: 700; color: var(--amarelo-hover);
+      background: var(--amarelo-claro); border-radius: 999px;
+      padding: 3px 10px; border: 1px solid #FDE68A;
+    }
+    .nav-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--verde); color: white;
+      font-size: 14px; font-weight: 700;
+      padding: 10px 22px; border-radius: 999px;
+      text-decoration: none; transition: all .2s;
+    }
+    .nav-btn:hover { background: var(--verde-hover); transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; padding: 80px 24px;
+      position: relative; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background: linear-gradient(135deg, #FEE2E2, #FFFBEB);
+    }
+    .hero-bg img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center; display: block;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(160deg, rgba(255,255,255,.94) 0%, rgba(255,238,226,.88) 100%);
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 700px; width: 100%; }
+
+    .hero-logo-wrap {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 10px; margin-bottom: 22px;
+    }
+    .hero-logo-circulo {
+      width: 120px; height: 120px; border-radius: 50%; overflow: hidden;
+      box-shadow: 0 8px 28px rgba(220,38,38,.28);
+      background: var(--vermelho-suave);
+    }
+    .hero-logo-circulo img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-client-name { font-size: 18px; font-weight: 700; color: var(--cinza); letter-spacing: .2px; }
+
+    .hero h1 {
+      font-size: clamp(44px, 8vw, 72px);
+      font-weight: 900;
+      color: var(--vermelho);
+      letter-spacing: -2px;
+      line-height: 1;
+      white-space: nowrap;
+      margin-bottom: 16px;
+    }
+    .hero h1 .am { color: var(--amarelo); }
+
+    .hero-subtitulo {
+      font-size: 17px; font-weight: 500;
+      color: var(--texto); margin-bottom: 32px; line-height: 1.5;
+    }
+
+    .hero-localizacao { margin-bottom: 32px; }
+    .loc-texto {
+      display: inline-block;
+      background: white; border: 1.5px solid #e2e8f0;
+      border-radius: 999px; padding: 10px 24px;
+      font-size: 15px; font-weight: 600; color: var(--texto);
+      box-shadow: 0 2px 8px rgba(0,0,0,.07);
+    }
+    .loc-texto strong { color: var(--vermelho); }
+
+    .btn-wpp {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      background: var(--verde); color: white;
+      font-size: 16px; font-weight: 700;
+      padding: 16px 32px; border-radius: 999px;
+      text-decoration: none; transition: all .2s;
+      box-shadow: 0 4px 20px rgba(34,197,94,.4);
+    }
+    .btn-wpp:hover { background: var(--verde-hover); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(34,197,94,.45); }
+    .btn-wpp svg { width: 20px; height: 20px; fill: white; flex-shrink: 0; }
+
+    /* ── STATS — 4 BLOCOS ── */
+    .stats {
+      border-top: 1px solid var(--borda);
+      border-bottom: 1px solid var(--borda);
+      padding: 32px 48px;
+      background: var(--branco);
+    }
+    .stats-inner {
+      max-width: 960px; margin: 0 auto;
+      display: flex; justify-content: space-around;
+      align-items: center; gap: 24px;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-size: 30px; font-weight: 900; color: var(--vermelho);
+      letter-spacing: -1px; line-height: 1;
+    }
+    .stat-num .am { color: var(--amarelo); }
+    .stat-label { font-size: 12px; color: var(--cinza); margin-top: 4px; font-weight: 500; }
+
+    /* ── SEÇÕES ── */
+    .sec { padding: 88px 48px; max-width: 1100px; margin: 0 auto; }
+
+    .sec-tag {
+      display: inline-block;
+      font-size: 11px; font-weight: 600; color: var(--vermelho);
+      text-transform: uppercase; letter-spacing: 2.5px; margin-bottom: 12px;
+    }
+    .sec-titulo {
+      font-size: 36px; font-weight: 800;
+      letter-spacing: -.3px; line-height: 1.2; margin-bottom: 12px;
+    }
+    .sec-titulo span { color: var(--amarelo); }
+    .sec-sub {
+      font-size: 16px; color: var(--cinza);
+      max-width: 480px; line-height: 1.6; margin-bottom: 48px;
+    }
+
+    /* ── GALERIA — slideshow automático ── */
+    .galeria-slide {
+      margin-top: 48px;
+      aspect-ratio: 16 / 7;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+    .galeria-slide img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      display: block;
+      transition: opacity .6s ease;
+    }
+
+    /* ── SERVIÇOS — 6 cards 3x2 ── */
+    .servicos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .servico-card {
+      background: var(--cinza-claro);
+      border-radius: 20px; padding: 28px 22px;
+      transition: all .2s;
+    }
+    .servico-card:hover {
+      background: var(--vermelho-suave);
+      transform: translateY(-3px);
+    }
+    .servico-icone {
+      width: 44px; height: 44px;
+      background: var(--vermelho-suave);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px;
+    }
+    .servico-card:hover .servico-icone { background: rgba(220,38,38,.15); }
+    .servico-icone svg {
+      width: 22px; height: 22px;
+      stroke: var(--vermelho); fill: none;
+      stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .servico-card h3 { font-size: 15px; font-weight: 700; line-height: 1.4; margin-bottom: 6px; }
+    .servico-card p  { font-size: 13px; color: var(--cinza); line-height: 1.55; }
+
+    /* ── POR QUE — 2 colunas ── */
+    .sec-porque {
+      padding: 88px 48px;
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: center;
+    }
+    .motivos { display: flex; flex-direction: column; gap: 8px; }
+    .motivo {
+      display: flex; align-items: flex-start; gap: 16px;
+      padding: 20px; border-radius: 16px;
+      border: 1px solid transparent; transition: all .2s;
+    }
+    .motivo:hover { background: var(--vermelho-suave); border-color: #FCA5A5; }
+    .motivo-num {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: var(--vermelho); color: white;
+      font-size: 14px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .motivo h4 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+    .motivo p  { font-size: 13px; color: var(--cinza); line-height: 1.5; }
+
+    /* ── DEPOIMENTOS ── */
+    .sec-depoi { background: #E2E6EA; padding: 88px 0; }
+    .sec-depoi-inner { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
+    .sec-depoi .sec-tag { color: var(--vermelho); }
+
+    .carrossel-wrap { position: relative; margin-top: 48px; overflow: hidden; }
+    .carrossel-track {
+      display: flex; gap: 0;
+      transition: transform .45s cubic-bezier(.25,.46,.45,.94);
+    }
+    .carrossel-slide { flex: 0 0 100%; padding: 0 20px; }
+
+    .review-img-card {
+      background: white; border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,.1);
+      overflow: hidden;
+      max-width: 480px; margin: 0 auto;
+    }
+    .review-img-card img { width: 100%; height: auto; display: block; }
+
+    .carrossel-nav {
+      display: flex; align-items: center; justify-content: center;
+      gap: 12px; margin-top: 32px;
+    }
+    .carrossel-btn {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: white; border: 1.5px solid var(--borda);
+      color: var(--vermelho); font-size: 18px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,.08); transition: all .2s;
+    }
+    .carrossel-btn:hover { background: var(--vermelho); color: white; border-color: var(--vermelho); }
+    .carrossel-dots { display: flex; gap: 6px; align-items: center; }
+    .carrossel-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #CBD5E1; cursor: pointer; transition: all .25s;
+    }
+    .carrossel-dot.ativo { background: var(--vermelho); width: 24px; border-radius: 4px; }
+
+    /* ── CTA ── */
+    .sec-cta {
+      padding: 88px 48px; text-align: center;
+      max-width: 640px; margin: 0 auto;
+    }
+    .sec-cta h2 {
+      font-size: 40px; font-weight: 900;
+      letter-spacing: -1px; line-height: 1.1; margin-bottom: 16px;
+    }
+    .sec-cta h2 span { color: var(--amarelo); }
+    .sec-cta p { font-size: 16px; color: var(--cinza); margin-bottom: 36px; line-height: 1.6; }
+
+    /* ── LOCALIZAÇÃO ── */
+    .sec-local { background: var(--cinza-claro); padding: 88px 48px; }
+    .sec-local-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1.2fr;
+      gap: 64px; align-items: center;
+    }
+    .info-box {
+      background: white; border-radius: 20px; padding: 28px;
+      margin-top: 32px; display: flex; flex-direction: column;
+      gap: 16px; border: 1px solid var(--borda);
+    }
+    .info-linha {
+      display: flex; align-items: flex-start; gap: 12px;
+      font-size: 14px; color: var(--cinza); line-height: 1.5;
+    }
+    .info-ico {
+      width: 36px; height: 36px;
+      background: var(--vermelho-suave); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .info-ico svg {
+      width: 18px; height: 18px;
+      stroke: var(--vermelho); fill: none;
+      stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .info-linha strong { color: var(--texto); display: block; font-size: 13px; font-weight: 700; margin-bottom: 2px; }
+    .mapa { border-radius: 24px; overflow: hidden; height: 360px; box-shadow: 0 8px 32px rgba(0,0,0,.1); }
+    .mapa iframe { width: 100%; height: 100%; border: none; display: block; }
+
+    .local-btn-wrap { margin-top: 28px; text-align: center; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--borda);
+      padding: 32px 48px;
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 20px; flex-wrap: wrap;
+    }
+    .footer-texto { font-size: 13px; color: var(--cinza); }
+    .footer-texto strong { color: var(--texto); }
+    .footer-nome { font-size: 20px; font-weight: 900; color: var(--vermelho); letter-spacing: -.5px; }
+    .footer-nome span { color: var(--amarelo); }
+
+    /* ── BOTÃO FLUTUANTE ── */
+    .wpp-float {
+      position: fixed; bottom: 28px; right: 28px;
+      width: 58px; height: 58px; background: var(--verde);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 24px rgba(34,197,94,.45);
+      text-decoration: none; z-index: 999; transition: all .2s;
+    }
+    .wpp-float:hover { transform: scale(1.1); }
+    .wpp-float svg { width: 28px; height: 28px; fill: white; }
+
+    /* ── RESPONSIVO ── */
+    @media (max-width: 900px) {
+      nav { padding: 14px 20px; }
+      nav .nav-badge { display: none; }
+
+      .hero { padding: 52px 20px; min-height: 100svh; }
+      .hero h1 { font-size: 46px; white-space: normal; letter-spacing: -1.5px; }
+      .hero-subtitulo { font-size: 15px; }
+
+      .stats { padding: 24px 20px; }
+      .stats-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px 16px;
+        justify-items: center;
+      }
+      .stat-num { font-size: 22px; }
+
+      .sec { padding: 56px 20px; }
+      .sec-titulo { font-size: 28px; text-align: center; }
+      .sec-tag { display: block; text-align: center; }
+      .sec-sub { text-align: center; max-width: 100%; margin-left: auto; margin-right: auto; }
+
+      .galeria-slide { aspect-ratio: 4 / 3; }
+
+      .servicos-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+
+      .sec-porque { grid-template-columns: 1fr; gap: 40px; padding: 56px 20px; }
+      .sec-porque > div:first-child .sec-titulo { text-align: center; }
+      .sec-porque > div:first-child .sec-sub  { text-align: center; margin: 0 auto 16px; }
+      .sec-porque > div:first-child .sec-tag  { display: block; text-align: center; }
+
+      .sec-depoi { padding: 56px 0; }
+      .sec-depoi-inner { padding: 0 20px; }
+      .sec-depoi .sec-titulo { text-align: center; }
+      .sec-depoi .sec-sub   { text-align: center; }
+
+      .sec-cta { padding: 56px 20px; }
+      .sec-cta h2 { font-size: 28px; }
+
+      .sec-local { padding: 56px 20px; }
+      .sec-local-inner { grid-template-columns: 1fr; gap: 32px; }
+      .sec-local .sec-titulo { text-align: center; }
+      .sec-local .sec-tag    { display: block; text-align: center; }
+      .mapa { height: 240px; }
+
+      footer { padding: 24px 20px; flex-direction: column; text-align: center; }
+
+      .wpp-float { width: 64px; height: 64px; bottom: 20px; right: 20px; }
+      .wpp-float svg { width: 30px; height: 30px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 38px; }
+      .servicos-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQJHWBMD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- TOPO -->
+  <div class="topo">
+    <span class="topo-dot"></span>
+    Atendimento 24h disponível
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-circulo">
+        <img src="assets/logo.webp" alt="Hospital Veterinário São Lázaro" loading="lazy" />
+      </div>
+      <span class="nav-nome">São Lázaro <span style="color:var(--amarelo)">Vet</span></span>
+      <span class="nav-badge">Hospital 24h</span>
+    </a>
+    <a href="https://wa.me/5585991538158?text=Ol%C3%A1%2C%20encontrei%20voc%C3%AAs%20pelo%20Google%20e%20gostaria%20de%20atendimento.%20%5BN%C3%A3o%20apague%20esta%20mensagem%5D" class="nav-btn">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="white" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Falar agora
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-bg">
+      <img src="assets/clinica1.webp" alt="Hospital Veterinário São Lázaro" fetchpriority="high" decoding="sync" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+
+      <div class="hero-logo-wrap">
+        <div class="hero-logo-circulo">
+          <img src="assets/logo.webp" alt="Hospital Veterinário São Lázaro" />
+        </div>
+        <span class="hero-client-name">São Lázaro</span>
+      </div>
+
+      <h1>Hospital Veterinário <span class="am">24h</span></h1>
+      <p class="hero-subtitulo">Atendimento Imediato, prontos para te atender.</p>
+
+      <div class="hero-localizacao">
+        <div class="loc-texto">📍 Localização privilegiada em <strong>Fortaleza – CE</strong></div>
+      </div>
+
+      <a href="https://wa.me/5585991538158?text=Ol%C3%A1%2C%20encontrei%20voc%C3%AAs%20pelo%20Google%20e%20preciso%20de%20atendimento%20veterin%C3%A1rio%20urgente.%20%5BN%C3%A3o%20apague%20esta%20mensagem%5D" class="btn-wpp">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Atendimento Imediato no WhatsApp
+      </a>
+
+    </div>
+  </div>
+
+  <!-- STATS — 4 BLOCOS -->
+  <div class="stats">
+    <div class="stats-inner">
+      <div class="stat">
+        <div class="stat-num"><span class="am">24h</span></div>
+        <div class="stat-label">Atendimento disponível</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">7 <span class="am" style="font-size:18px">dias</span></div>
+        <div class="stat-label">Sempre aberto</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">5.0 <span class="am" style="font-size:20px">★</span></div>
+        <div class="stat-label">Nota no Google</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">100<span class="am" style="font-size:20px">%</span></div>
+        <div class="stat-label">Atendimento humanizado</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALERIA — slideshow automático -->
+  <div style="background:var(--cinza-claro); padding:88px 48px;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <span class="sec-tag">Nossa clínica</span>
+      <h2 class="sec-titulo">Um espaço pensado <span>para eles</span></h2>
+      <div class="galeria-slide">
+        <img id="galeriaImg" src="assets/clinica1.webp" alt="Hospital Veterinário São Lázaro" loading="lazy" />
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVIÇOS — 6 cards 3x2 -->
+  <div class="sec">
+    <span class="sec-tag">O que fazemos</span>
+    <h2 class="sec-titulo">Tudo que seu pet precisa <span>em um só lugar</span></h2>
+    <p class="sec-sub">Da emergência ao tratamento completo — equipe especializada pronta 24 horas por dia.</p>
+    <div class="servicos-grid">
+
+      <div class="servico-card">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>Emergências 24h</h3>
+        <p>Plantão permanente para urgências. A qualquer hora, nossa equipe está pronta para atender.</p>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 2.76-1.86 5.1-4.42 5.8C15.3 13.73 18 17.06 18 21H6c0-3.94 2.7-7.27 5.42-8.2A5 5 0 0 1 7 7a5 5 0 0 1 5-5z"/></svg>
+        </div>
+        <h3>Consultas Veterinárias</h3>
+        <p>Diagnósticos precisos e orientação completa com profissionais experientes e dedicados.</p>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+        </div>
+        <h3>Cirurgias</h3>
+        <p>Centro cirúrgico equipado com tecnologia de ponta e equipe especializada para procedimentos seguros.</p>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Internação Monitorada</h3>
+        <p>Seu pet em observação constante com equipe presente 24h para garantir recuperação segura.</p>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><circle cx="12" cy="10" r="3"/><line x1="12" y1="3" x2="12" y2="7"/><line x1="12" y1="13" x2="12" y2="17"/><line x1="2" y1="10" x2="6" y2="10"/><line x1="18" y1="10" x2="22" y2="10"/></svg>
+        </div>
+        <h3>Raio-X e Ultrassom</h3>
+        <p>Diagnósticos por imagem rápidos e precisos realizados no próprio hospital para agilidade no tratamento.</p>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24"><path d="M10 5.172C10 3.443 8.557 2 6.828 2c-1.729 0-3.172 1.443-3.172 3.172 0 2.145 3.172 6.828 3.172 6.828s3.172-4.683 3.172-6.828z"/><path d="M20.344 5.172C20.344 3.443 18.9 2 17.172 2c-1.729 0-3.172 1.443-3.172 3.172 0 2.145 3.172 6.828 3.172 6.828s3.172-4.683 3.172-6.828z" opacity=".7"/><path d="M5 13c0 4.97 4.03 9 9 9s9-4.03 9-9"/></svg>
+        </div>
+        <h3>Cães &amp; Gatos</h3>
+        <p>Atendimento especializado para diferentes espécies com cuidado respeitoso e dedicado a cada animal.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- POR QUE — 2 colunas -->
+  <div style="background:var(--cinza-claro); padding:1px 0;">
+    <div class="sec-porque">
+
+      <div>
+        <span class="sec-tag">Por que o São Lázaro?</span>
+        <h2 class="sec-titulo" style="font-size:32px;">Cuidado responsável.<br /><span>Bem-estar garantido.</span></h2>
+        <p class="sec-sub" style="margin-bottom:0;">Muito além de um hospital — somos parceiros na saúde do seu pet a qualquer hora do dia ou da noite.</p>
+      </div>
+
+      <div class="motivos">
+        <div class="motivo">
+          <div class="motivo-num">01</div>
+          <div>
+            <h4>Atendimento 24h, 7 dias</h4>
+            <p>Prontos para qualquer emergência a qualquer hora, sem exceção.</p>
+          </div>
+        </div>
+        <div class="motivo">
+          <div class="motivo-num">02</div>
+          <div>
+            <h4>Atendimento humanizado</h4>
+            <p>Cuidado respeitoso e carinhoso com cada animal e seus tutores em todo atendimento.</p>
+          </div>
+        </div>
+        <div class="motivo">
+          <div class="motivo-num">03</div>
+          <div>
+            <h4>Tecnologia de ponta</h4>
+            <p>Equipamentos modernos para diagnósticos precisos e tratamentos seguros e eficazes.</p>
+          </div>
+        </div>
+        <div class="motivo">
+          <div class="motivo-num">04</div>
+          <div>
+            <h4>Plantão 24h, Dom a Dom</h4>
+            <p>Acidentes e doenças não escolhem hora. Por isso, estamos sempre disponíveis para você.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DEPOIMENTOS — "Quem cuida recomenda!" -->
+  <div class="sec-depoi">
+    <div class="sec-depoi-inner">
+      <span class="sec-tag">Avaliações reais</span>
+      <h2 class="sec-titulo">Quem cuida recomenda!</h2>
+      <p class="sec-sub">Prints reais de tutores que confiam no Hospital Veterinário São Lázaro.</p>
+
+      <div class="carrossel-wrap">
+        <div class="carrossel-track" id="carrosselTrack">
+          <div class="carrossel-slide">
+            <div class="review-img-card"><img src="assets/dep1.webp" alt="Avaliação real 1" loading="lazy" /></div>
+          </div>
+          <div class="carrossel-slide">
+            <div class="review-img-card"><img src="assets/dep2.webp" alt="Avaliação real 2" loading="lazy" /></div>
+          </div>
+          <div class="carrossel-slide">
+            <div class="review-img-card"><img src="assets/dep3.webp" alt="Avaliação real 3" loading="lazy" /></div>
+          </div>
+          <div class="carrossel-slide">
+            <div class="review-img-card"><img src="assets/dep4.webp" alt="Avaliação real 4" loading="lazy" /></div>
+          </div>
+          <div class="carrossel-slide">
+            <div class="review-img-card"><img src="assets/dep5.webp" alt="Avaliação real 5" loading="lazy" /></div>
+          </div>
+        </div>
+
+        <div class="carrossel-nav">
+          <button class="carrossel-btn" onclick="moverCarrossel(-1)" aria-label="Anterior">&#8592;</button>
+          <div class="carrossel-dots" id="carrosselDots"></div>
+          <button class="carrossel-btn" onclick="moverCarrossel(1)" aria-label="Próximo">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="sec-cta">
+    <h2>A saúde do seu pet <span>não pode esperar.</span></h2>
+    <p>Entre em contato agora e receba atendimento imediato da nossa equipe.</p>
+    <a href="https://wa.me/5585991538158?text=Ol%C3%A1%2C%20encontrei%20voc%C3%AAs%20pelo%20Google%20e%20preciso%20de%20atendimento%20veterin%C3%A1rio%20urgente.%20%5BN%C3%A3o%20apague%20esta%20mensagem%5D" class="btn-wpp" style="font-size:17px;padding:18px 36px;">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Falar no WhatsApp agora
+    </a>
+  </div>
+
+  <!-- LOCALIZAÇÃO -->
+  <div class="sec-local">
+    <div class="sec-local-inner">
+      <div>
+        <span class="sec-tag">Onde estamos</span>
+        <h2 class="sec-titulo" style="font-size:32px;">Localização <span>privilegiada</span><br />em Fortaleza</h2>
+        <div class="info-box">
+          <div class="info-linha">
+            <div class="info-ico">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Endereço</strong>
+              Av. Alanis Maria Laurindo de Oliveira, 157<br />
+              Conjunto Ceará I – Fortaleza – CE
+            </div>
+          </div>
+          <div class="info-linha">
+            <div class="info-ico">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <strong>Horário</strong>
+              Aberto 24 horas, todos os dias do ano
+            </div>
+          </div>
+          <div class="info-linha">
+            <div class="info-ico">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Telefone / WhatsApp</strong>
+              (85) 99153-8158
+            </div>
+          </div>
+        </div>
+        <div class="local-btn-wrap">
+          <a href="https://wa.me/5585991538158?text=Ol%C3%A1%2C%20encontrei%20voc%C3%AAs%20pelo%20Google%20e%20preciso%20de%20atendimento%20veterin%C3%A1rio.%20%5BN%C3%A3o%20apague%20esta%20mensagem%5D" class="btn-wpp" style="font-size:17px;padding:18px 36px;">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.2120595473634!2d-38.6042159!3d-3.7639723000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74dfe7f0fa3a7%3A0x66473e25cad80340!2sHospital%20Veterin%C3%A1rio%20S%C3%A3o%20L%C3%A1zaro%20Fortaleza%2024h%20Emerg%C3%AAncia!5e0!3m2!1spt-BR!2sbr!4v1778878911261!5m2!1spt-BR!2sbr"
+          width="600" height="450"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-nome">São Lázaro <span>Vet</span></span>
+    <div class="footer-texto">
+      <strong>Hospital Veterinário São Lázaro</strong> · Av. Alanis Maria Laurindo de Oliveira, 157 – Fortaleza – CE<br />
+      Cuidado responsável. Bem-estar garantido.
+    </div>
+    <a href="https://wa.me/5585991538158?text=Ol%C3%A1%2C%20encontrei%20voc%C3%AAs%20pelo%20Google%20e%20preciso%20de%20atendimento%20veterin%C3%A1rio.%20%5BN%C3%A3o%20apague%20esta%20mensagem%5D" class="nav-btn">
+      Falar no WhatsApp
+    </a>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WPP -->
+  <a href="https://wa.me/5585991538158?text=Ol%C3%A1%2C%20encontrei%20voc%C3%AAs%20pelo%20Google%20e%20preciso%20de%20atendimento%20veterin%C3%A1rio.%20%5BN%C3%A3o%20apague%20esta%20mensagem%5D" class="wpp-float" title="WhatsApp – Atendimento 24h">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    /* ── CARROSSEL DEPOIMENTOS ── */
+    var slides = document.querySelectorAll('.carrossel-slide');
+    var totalSlides = slides.length;
+    var slideAtual = 0;
+    var autoplayTimer;
+    var dotsContainer = document.getElementById('carrosselDots');
+
+    for (var i = 0; i < totalSlides; i++) {
+      var d = document.createElement('div');
+      d.className = 'carrossel-dot' + (i === 0 ? ' ativo' : '');
+      d.onclick = (function(idx){ return function(){ irParaSlide(idx); }; })(i);
+      dotsContainer.appendChild(d);
+    }
+
+    function atualizarCarrossel() {
+      var track = document.getElementById('carrosselTrack');
+      var slideW = track.querySelector('.carrossel-slide').offsetWidth;
+      track.style.transform = 'translateX(-' + (slideAtual * slideW) + 'px)';
+      document.querySelectorAll('.carrossel-dot').forEach(function(d, i) {
+        d.classList.toggle('ativo', i === slideAtual);
+      });
+    }
+
+    function moverCarrossel(dir) {
+      slideAtual = (slideAtual + dir + totalSlides) % totalSlides;
+      atualizarCarrossel(); reiniciarAutoplay();
+    }
+
+    function irParaSlide(i) {
+      slideAtual = i; atualizarCarrossel(); reiniciarAutoplay();
+    }
+
+    function reiniciarAutoplay() {
+      clearInterval(autoplayTimer);
+      autoplayTimer = setInterval(function(){ moverCarrossel(1); }, 5500);
+    }
+
+    reiniciarAutoplay();
+    window.addEventListener('resize', atualizarCarrossel);
+
+    var startX = 0;
+    var track = document.getElementById('carrosselTrack');
+    track.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', function(e){
+      var diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) moverCarrossel(diff > 0 ? 1 : -1);
+    }, { passive: true });
+
+    /* ── GALERIA SLIDESHOW ── */
+    var galeriaFotos = ['assets/clinica1.webp', 'assets/clinica2.webp', 'assets/clinica3.webp'];
+    var galeriaIdx = 0;
+    var galeriaImg = document.getElementById('galeriaImg');
+
+    setInterval(function() {
+      galeriaIdx = (galeriaIdx + 1) % galeriaFotos.length;
+      galeriaImg.style.opacity = '0';
+      setTimeout(function() {
+        galeriaImg.src = galeriaFotos[galeriaIdx];
+        galeriaImg.style.opacity = '1';
+      }, 400);
+    }, 3500);
+  </script>
+
+</body>
+</html>
